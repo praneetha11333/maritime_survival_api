@@ -23,5 +23,6 @@ jobs:
   - run: pip install -r requirements.txt
   
   - run: pytest
+  - run: curl ${{ secrets.RENDER_DEPLOY_HOOK }} 
 
   - run: echo "Deploy to Render"
