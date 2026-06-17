@@ -21,6 +21,7 @@ jobs:
       python-version: '3.11'
 
   - run: pip install -r requirements.txt
-
+  
+  - run: pytest
 
   - run: echo "Deploy to Render"
